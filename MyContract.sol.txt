@@ -1,0 +1,42 @@
+pragma solidity ^0.6.0;
+
+contract MyContract {
+    string public myString = "Hello World!2";
+    
+    function setMyString(string memory _myString) public {
+        myString = _myString;
+    }
+    
+    uint256 public myUnit;
+    
+    function setMyUnit(uint _myUnit) public {
+        myUnit = _myUnit;
+    }
+    
+    bool public myBool;
+    
+    function setMyBool(bool _mybool) public {
+        myBool = _mybool;
+    }
+    
+    uint8 public myUint8;
+    
+    function incrementUint() public{
+        myUint8++;
+    }
+    
+    function decrementUint() public {
+        myUint8--;
+    }
+    
+    address public myAddress;
+    
+    function setAddress(address _address) public {
+        myAddress = _address;
+    }
+    
+    function getBalanceOfAddress() public view returns(uint){
+        return myAddress.balance;
+    }
+
+}
